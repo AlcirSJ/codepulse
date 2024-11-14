@@ -12,6 +12,11 @@ import { EditCategoryComponent } from './features/category/edit-category/edit-ca
 import { BlogpostListComponent } from './features/blog-post/blogpost-list/blogpost-list.component';
 import { AddBlogpostComponent } from './features/blog-post/add-blogpost/add-blogpost.component';
 import { MarkdownModule } from 'ngx-markdown';
+import { CommonModule } from '@angular/common';
+import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
+import { ToastrModule } from 'ngx-toastr';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,14 +25,19 @@ import { MarkdownModule } from 'ngx-markdown';
     AddCategoryComponent,
     EditCategoryComponent,
     BlogpostListComponent,
-    AddBlogpostComponent
+    AddBlogpostComponent,
+    
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    MarkdownModule.forRoot()
+    MarkdownModule.forRoot(),
+    ToastrModule.forRoot(),
+    CommonModule,
+    NgMultiSelectDropDownModule
   ],
   providers: [],
   bootstrap: [AppComponent]
