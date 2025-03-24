@@ -15,6 +15,7 @@ import { MarkdownModule } from 'ngx-markdown';
 import { CommonModule } from '@angular/common';
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 import { ToastrModule } from 'ngx-toastr';
+import { EditBlogpostComponent } from './features/blog-post/edit-blogpost/edit-blogpost.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { ToastrModule } from 'ngx-toastr';
     EditCategoryComponent,
     BlogpostListComponent,
     AddBlogpostComponent,
+    EditBlogpostComponent,
     
 
   ],

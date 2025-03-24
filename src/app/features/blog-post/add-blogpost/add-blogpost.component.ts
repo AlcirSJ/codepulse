@@ -64,6 +64,8 @@ export class AddBlogpostComponent implements OnInit{
         }
       });
   }
+
+  
   onFormSubmit() : void{
     debugger;
     let categories = this.model.categories.map(x => x.id);  
